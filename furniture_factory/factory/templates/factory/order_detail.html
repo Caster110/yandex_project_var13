@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ order }}</h2>
+<p><strong>Описание:</strong> {{ order.description }}</p>
+<p><strong>Дата:</strong> {{ order.created_at }}</p>
+<h3>Цеха, участвующие в выполнении:</h3>
+<ul>
+{% for ws in workshops %}
+    <li>{{ ws.name }} — начальник: {{ ws.supervisor }}</li>
+{% empty %}
+    <li>Не назначены</li>
+{% endfor %}
+</ul>
+<a href="{% url 'order_list' %}">← Назад к заказам</a>
+{% endblock %}

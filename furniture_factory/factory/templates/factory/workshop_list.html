@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Цеха и рабочие</h2>
+{% for ws in workshops %}
+    <h3>{{ ws.name }} (начальник: {{ ws.supervisor }})</h3>
+    <ul>
+    {% for worker in ws.worker_set.all %}
+        <li>{{ worker.full_name }}</li>
+    {% empty %}
+        <li>Нет рабочих</li>
+    {% endfor %}
+    </ul>
+{% empty %}
+    <p>Цеха не созданы</p>
+{% endfor %}
+{% endblock %}

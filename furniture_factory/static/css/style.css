@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f7f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5d4037;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav {
+    padding: 0.8rem 2rem;
+    background-color: #8d6e63;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.2rem;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background-color: #6d4c41;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #5d4037;
+    border-bottom: 2px solid #d7ccc8;
+    padding-bottom: 0.4rem;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+button, a.btn {
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+button:hover, a.btn:hover {
+    background-color: #5d4037;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #d7ccc8;
+    margin: 1.5rem 0;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Мебельная фабрика</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Информационная система мебельной фабрики</h1>
+    </header>
+    <nav>
+        <a href="{% url 'order_list' %}">Заказы</a> |
+        <a href="{% url 'workshop_list' %}">Цеха</a> |
+        <a href="{% url 'admin:index' %}">Админка</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
